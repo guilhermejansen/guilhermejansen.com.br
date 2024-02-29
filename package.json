@@ -1,6 +1,6 @@
 {
     "name": "meu-site-guilhermejansen",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Um site Vue.js que exibe um iframe de página inteira",
     "main": "index.js",
     "scripts": {
