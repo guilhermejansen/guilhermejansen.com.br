@@ -15,7 +15,9 @@
   "dependencies": {
     "core-js": "^3.36.0",
     "vue": "^3.4.21",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "dotenv": "^16.4.5",
+    "cross-var": "^1.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^5.0.8",
