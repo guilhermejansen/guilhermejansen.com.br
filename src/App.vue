@@ -69,7 +69,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css' // Importa o CSS
 
