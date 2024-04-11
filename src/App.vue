@@ -66,6 +66,15 @@
       </div>
     </footer>
   </div>
+    <!-- Adiciona o botão de chat ao vivo -->
+    <button class="chat-button">
+      Chat Ao Vivo
+    </button>
+
+    <!-- Adiciona a imagem do perfil -->
+    <div align="center" class="profile-container">
+      <img src="https://s3.setupautomatizado.com.br/.../jhasv3yazyjkvy5rclt34vvi?v=1712835733829" class="profile-image" alt="Guilherme Jansen">
+    </div>
 </template>
 <script>
 import AOS from 'aos'
@@ -79,74 +88,95 @@ export default {
 }
 </script>
 <style>
+/* Novo estilo para combinar com o modelo */
 .dark-theme {
-  background-color: #121212;
-  color: #fff;
-  min-height: 100vh; /* Garante que o fundo preencha toda a altura da tela */
+  background-color: #0D1117; /* Cor de fundo atualizada para combinar com o modelo */
+  color: #C9D1D9; /* Cor do texto mais suave */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte moderna */
 }
 
-header, footer {
-  text-align: center;
-  padding: 40px 20px; /* Aumenta o padding para mais espaço */
+header {
+  background: #161B22; /* Cabeçalho com uma cor de fundo distinta */
+  color: #58A6FF; /* Cor dos títulos no cabeçalho */
+  padding: 4rem 0; /* Aumento do padding para mais espaço */
+  border-bottom: 1px solid #30363D; /* Linha de separação sutil */
 }
 
+footer {
+  background: #161B22; /* Rodapé com cor de fundo correspondente ao cabeçalho */
+  color: #58A6FF; /* Cor dos títulos no rodapé */
+  padding: 2rem 0;
+  border-top: 1px solid #30363D; /* Linha de separação sutil */
+}
+
+/* Estilos dos contadores e badges GitHub */
+.github-badges {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Espaço entre os itens */
+  padding-right: 2rem;
+}
+
+.github-badges img {
+  transition: all 0.3s ease-in-out;
+}
+
+.github-badges img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para a lista de habilidades */
 .skills-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 20px; /* Adiciona espaço acima da lista de habilidades */
-}
-
-.skill {
-  margin: 10px;
-  padding: 20px 30px; /* Aumenta o padding para mais espaço */
-  background: #333;
-  border-radius: 8px; /* Bordas mais arredondadas */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave */
-}
-
-.skill:hover {
-  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
-}
-
-/* Estilos para links de redes sociais */
-footer a {
-  color: #4da6ff; /* Cor do link */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #81c0ff; /* Cor do link ao passar o mouse */
+  margin-top: 2rem;
 }
 
 .skill-category {
-  margin: 20px 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.skill-category h3 {
-  margin-bottom: 10px;
+.skill-category:hover {
+  background: #21262D;
+  transform: translateY(-5px);
 }
 
-/* Estilos para os badges e ícones de habilidades */
-.skill-category div img {
-  margin: 5px;
-  transition: transform 0.3s ease;
+/* Adiciona o botão de chat */
+.chat-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #58A6FF;
+  color: #161B22;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
-.skill-category div img:hover {
-  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+.chat-button:hover {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
-/* Estilos para a seção de análises do GitHub */
-#github-analytics div {
-  margin-bottom: 20px;
+/* Adiciona borda e sombra à imagem do perfil */
+.profile-image {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  border: 6px solid #58A6FF; /* Borda profunda com cor de destaque */
+  width: 200px; /* Ajuste conforme o tamanho desejado */
+  height: auto;
 }
 
-#github-analytics img {
-  margin: 5px;
-  border-radius: 5px; /* Bordas arredondadas para as imagens */
-}
 /* Adicione mais estilos conforme necessário */
 </style>

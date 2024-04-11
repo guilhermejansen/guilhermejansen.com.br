@@ -1,1 +1,23 @@
 <link rel="icon" href="<%= BASE_URL %>favicon.ico" type="image/x-icon">
+<body>
+    <!-- ... o conteúdo da sua aplicação Vue ... -->
+  
+    <!-- Script do Chat Ao Vivo -->
+    <script>
+      (function(d, t) {
+        var BASE_URL = "https://chat.setupautomatizado.com.br";
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function() {
+          window.chatwootSDK.run({
+            websiteToken: 'GWNp5WVfGDgAz6FUfFxuJ8Vz',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document, "script");
+    </script>
+  </body>
+  
